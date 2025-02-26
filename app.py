@@ -10,7 +10,7 @@ if not GROQ_API_KEY:
     st.stop()
 
 st.set_page_config(page_title="TaxGenie - AI Tax Assistant", page_icon="📊")
-# Custom CSS for improved UI
+
 st.markdown(
     """
     <style>
@@ -28,7 +28,7 @@ st.markdown(
 
         /* Chat bubbles styling */
         .stChatMessage.assistant {
-            background: #64b5f6;
+            background: #5F8575;
             color: white;
             padding: 10px;
             border-radius: 10px;
@@ -36,8 +36,8 @@ st.markdown(
         }
         
         .stChatMessage.user {
-            background: #f06292;
-            color: white;
+            background: #FFE5B4;
+            color: black;
             padding: 10px;
             border-radius: 10px;
             margin: 5px 0;
@@ -52,7 +52,7 @@ st.caption(" Your Intelligent Tax Assistant")
 
 # Sidebar with Features
 with st.sidebar:
-   # st.image("https://via.placeholder.com/300x100.png?text=Aarogya+AI", use_column_width=True)
+   
     st.markdown("### 🤖 What can I do ?")
     st.markdown("""
     - 💡 **Help in tax filing processes**
@@ -91,7 +91,7 @@ with st.sidebar:
 # Initialize AI Client
 client = Groq(api_key=GROQ_API_KEY)
 
-system_prompt_template = "You are an expert AI tax assistant. Provide accurate, concise, and empathetic responses to user queries.  A Tax Assistant that can automate tax filing processes, simplifying complex calculations, identifying deductions, and minimizing errors.."
+system_prompt_template = "You are an expert AI tax assistant. Provide accurate, concise, and empathetic responses to user queries.  A Tax Assistant that can automate tax filing processes, simplifying complex calculations, identifying deductions, and minimizing errors.Also make sure answers are related to indian tax system as indian users will be using this chatbot."
 
 if "message_log" not in st.session_state:
     st.session_state.message_log = [{"role": "assistant", "content": "Hi! I'm TaxGenie, your AI Tax Assistant. Would love to be your guide ! "}]
