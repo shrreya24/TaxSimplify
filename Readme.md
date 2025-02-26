@@ -1,7 +1,7 @@
 # TaxSimplify - AI Tax Assistant
 
 ## Overview
-TaxSimplify is an AI-powered tax assistant designed to simplify the tax filing process by automating calculations, identifying deductions, and minimizing errors. Built using **Streamlit** and **Groq AI**, it provides users with a seamless experience for tax estimation and guidance.
+TaxSimplify is a smart AI-powered tax assistant that streamlines tax filing by automating complex calculations, optimizing deductions, and ensuring accuracy. Whether you're an individual or a business, TaxSimplify helps you maximize savings, minimize errors, and stay compliant with tax regulations. Built with Streamlit and Groq AI, it provides an intuitive and efficient platform for hassle-free tax management. Built using Streamlit and Groq AI, it provides users with a seamless experience for tax estimation and guidance.
 
 ## Features
 - 📊 **Automated Tax Calculation** - Instantly calculates estimated taxes based on user input.
