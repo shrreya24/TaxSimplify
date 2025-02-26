@@ -1,68 +1,78 @@
-# HealthCare Assistant
+# TaxSimplify - AI Tax Assistant
 
-🩺 **HealthCare Assistant** is an AI-powered healthcare companion built using Streamlit and Groq. It provides symptom analysis, medication guidance, health record management, and wellness recommendations.
+## Overview
+TaxSimplify is an AI-powered tax assistant designed to simplify the tax filing process by automating calculations, identifying deductions, and minimizing errors. Built using **Streamlit** and **Groq AI**, it provides users with a seamless experience for tax estimation and guidance.
 
 ## Features
+- 📊 **Automated Tax Calculation** - Instantly calculates estimated taxes based on user input.
+- 💼 **Deductions Guidance** - Helps users maximize their savings by suggesting applicable tax deductions.
+- 🔍 **Error Minimization** - Identifies and corrects potential tax filing errors.
+- 📝 **Tax Filing Assistance** - Guides users through the documentation and process required for filing taxes.
+- 🌍 **User-Friendly UI** - A sleek, interactive interface powered by Streamlit.
 
-- 🩹 Symptom Analysis
-- 💊 Medication Guidance
-- 📋 Health Record Management
-- 💡 Wellness Recommendations
+## Project Structure
+```
+TaxSimplify/
+│── app.py             # Main application file (Streamlit UI & backend logic)
+│── requirements.txt   # Dependencies list
+│── README.md          # Project documentation
+│── groq/              # AI Model configurations
+│── .env               # API keys and environment variables
+```
 
-## Built With
+## Installation & Setup
+Follow these steps to set up and run the TaxSimplify assistant locally:
 
-- [Streamlit](https://streamlit.io/)
-- [Groq](https://groq.com/)
-- [LangChain](https://python.langchain.com/)
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/your-username/taxsimplify.git
+cd taxsimplify
+```
 
-## Getting Started
+### 2️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
+```
 
-### Prerequisites
+### 3️⃣ Set Up Environment Variables
+For **Windows (PowerShell):**
+```powershell
+$env:GROQ_API_KEY="your-api-key"
+```
+For **macOS/Linux (Terminal):**
+```bash
+export GROQ_API_KEY="your-api-key"
+```
 
-- Python 3.7+
-- Streamlit
-- Groq API Key
-
-### Installation
-
-1. Clone the repository:
-    ```sh
-    git clone https://github.com/SURESHBEEKHANI/Gen-AI-With-Deep-Seek.git
-    cd healthcare-assistant
-    ```
-
-2. Install the required packages:
-    ```sh
-    pip install -r requirements.txt
-    ```
-
-3. Set the `GROQ_API_KEY` environment variable:
-    ```sh
-    export GROQ_API_KEY=your_groq_api_key
-    ```
-
-### Running the Application
-
-Run the Streamlit application:
-```sh
+### 4️⃣ Run the Application
+```bash
 streamlit run app.py
 ```
 
-### Usage
+### 5️⃣ Access the Application
+Once the server starts, open your browser and go to:
+```
+http://localhost:8501
+```
 
-1. Open your web browser and navigate to `http://localhost:8501`.
-2. Interact with the HealthCare Assistant by typing your health-related questions in the chat input.
+## Screenshots
+Here’s a glimpse of TaxSimplify in action:
 
-## Contributing
+### **Home Page & Features**
+![TaxSimplify Home](taxsimplify_1.JPG)
 
-Contributions are welcome! Please fork the repository and submit a pull request.
+### **Tax Calculation & User Interaction**
+![TaxSimplify Calculation](taxsimplify_2.JPG)
 
 ## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
+This project is licensed under the **MIT License**.
 
 ## Acknowledgements
+- Streamlit for the amazing web app framework
+- Groq for the powerful language models
 
-- [Streamlit](https://streamlit.io/)
-- [Groq](https://groq.com/)
-- [LangChain](https://python.langchain.com/)
+## Contact
+For any queries or support, reach out to: **shrreya.hole24@gmail.com**
+
+🚀 **Happy Tax Filing with TaxSimplify!**
+
